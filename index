@@ -1,4 +1,4 @@
-# Chauffeur<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -46,51 +46,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  padding: 20px;
-}
-
-.container {
-  background: white;
-  max-width: 600px;
-  margin: auto;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-}
-
-h1 {
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-top: 15px;
-}
-
-input, select, button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background: black;
-  color: white;
-  margin-top: 20px;
-  cursor: pointer;
-}
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  // You can add logic to POST this data to a backend service here.
-
-  // Just showing confirmation for now
-  document.getElementById("bookingForm").style.display = "none";
-  document.getElementById("confirmation").style.display = "block";
-});
